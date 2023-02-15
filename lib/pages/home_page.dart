@@ -275,43 +275,44 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
-          ListView(
-            shrinkWrap: true,
+          Column(
             children: [
-              ListView(
+              SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
-                children: [
-                  SizedBox(
-                    width: 250,
-                    height: 200,
-                    child: Card(
-                      color: cardColor2,
-                      elevation: 0,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                        side: BorderSide(
-                          color: Colors.grey.withOpacity(0.2),
-                          width: 1,
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: 250,
+                      height: 200,
+                      child: Card(
+                        color: cardColor2,
+                        elevation: 0,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          side: BorderSide(
+                            color: Colors.grey.withOpacity(0.2),
+                            width: 1,
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                  SizedBox(
-                    width: 250,
-                    height: 200,
-                    child: Card(
-                      color: cardColor2,
-                      elevation: 0,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                        side: BorderSide(
-                          color: Colors.grey.withOpacity(0.2),
-                          width: 1,
+                    SizedBox(
+                      width: 250,
+                      height: 200,
+                      child: Card(
+                        color: cardColor2,
+                        elevation: 0,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          side: BorderSide(
+                            color: Colors.grey.withOpacity(0.2),
+                            width: 1,
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ],
           )
